@@ -62,5 +62,5 @@ jobs:
           name: image-tar
       - name: Simulate deploy
         run: |
-          chmod +x ./deploy.sh || true
+          chmod +x ./app/deploy.sh || true
           ./deploy.sh staging ${{ github.sha }}
