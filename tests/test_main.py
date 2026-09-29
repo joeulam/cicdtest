@@ -1,4 +1,9 @@
 import pytest
+try:
+  from app.main import add, app
+except ModuleNotFoundError:
+  from main import add, app
+
 from app.main import add, app
 
 def test_add_positive():
