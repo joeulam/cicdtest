@@ -63,4 +63,4 @@ jobs:
       - name: Simulate deploy
         run: |
           chmod +x ./app/deploy.sh || true
-          ./deploy.sh staging ${{ github.sha }}
+          ./app/deploy.sh staging ${{ github.sha }}
