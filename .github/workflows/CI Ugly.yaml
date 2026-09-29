@@ -22,4 +22,4 @@ jobs:
           docker push myapp:latest
 
       - name: Deploy to production
-        run: ./app/deploy.sh prod
+        run: chmod +x ./app/deploy.sh prod
